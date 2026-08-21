@@ -218,9 +218,6 @@ export const ecommerce = {
     siteLabel: 'Live example',
     siteHref: 'https://aatprohor.com',
     siteText: 'aatprohor.com',
-    adminLabel: 'Admin panel',
-    adminHref: 'https://aatprohor.com/admin/login',
-    adminText: 'aatprohor.com/admin/login',
   },
   note:
     'Reference build shown above (Aatprohor). Your website will be customized with your own branding, products, and domain.',

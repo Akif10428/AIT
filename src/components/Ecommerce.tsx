@@ -110,12 +110,6 @@ export function Ecommerce() {
               {demo.siteText}
             </a>
           </p>
-          <p>
-            {demo.adminLabel}:{' '}
-            <a href={demo.adminHref} target="_blank" rel="noopener noreferrer">
-              {demo.adminText}
-            </a>
-          </p>
         </div>
       </div>
 
