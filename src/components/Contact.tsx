@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { site } from '../content/site'
@@ -17,12 +17,16 @@ export function Contact() {
   const [state, handleFormspreeSubmit] = useForm(FORMSPREE_ID)
   const captchaRef = useRef<ReCAPTCHA>(null)
   const [captchaError, setCaptchaError] = useState('')
+  const leadTracked = useRef(false)
 
   const whatsappHref = `https://wa.me/${whatsappNumber.replace(/\D/g, '')}`
 
-  if (state.succeeded) {
-    trackLead()
-  }
+  useEffect(() => {
+    if (state.succeeded && !leadTracked.current) {
+      leadTracked.current = true
+      trackLead('contact_form')
+    }
+  }, [state.succeeded])
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()

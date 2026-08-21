@@ -63,6 +63,57 @@ export const services = [
   },
 ]
 
+/** Packages for Facebook ads — Order Now captures lead (email + phone). */
+export const packages = [
+  {
+    id: 'basic-website',
+    number: '01',
+    name: 'Basic Website',
+    priceLabel: 'Start from 35,000 Taka',
+    priceAmount: '35,000',
+    accent: 'blue',
+    blurb: 'Professional business website ready for Facebook ads & Meta Pixel.',
+  },
+  {
+    id: 'basic-portfolio',
+    number: '02',
+    name: 'Basic Portfolio',
+    priceLabel: 'Start from 25,000 Taka',
+    priceAmount: '25,000',
+    accent: 'green',
+    blurb: 'Clean portfolio site to showcase your work and get inquiries.',
+  },
+  {
+    id: 'website-android',
+    number: '03',
+    name: 'Website + Android App',
+    priceLabel: 'Start from 50,000 Taka',
+    priceAmount: '50,000',
+    accent: 'orange',
+    blurb: 'Website plus Android app so customers can reach you on mobile.',
+  },
+  {
+    id: 'website-android-ios',
+    number: '04',
+    name: 'Website + Android + iOS',
+    priceLabel: 'Start from 75,000 Taka',
+    priceAmount: '75,000',
+    accent: 'purple',
+    blurb: 'Full package — website with Android and iOS app support.',
+  },
+] as const
+
+export type PackageId = (typeof packages)[number]['id']
+
+export const packageFeatures = [
+  'মডার্ন ও প্রফেশনাল ডিজাইন',
+  'মোবাইল রেসপনসিভ (সকল ডিভাইসে সাপোর্ট)',
+  'SEO ফ্রেন্ডলি স্ট্রাকচার',
+  'দ্রুত লোডিং এবং পারফরম্যান্স অপ্টিমাইজড',
+  'সিকিউর এবং ইউজার ফ্রেন্ডলি',
+  'সাপোর্ট এবং মেইনটেন্যান্স সুবিধা',
+]
+
 export const whyMe = [
   {
     title: 'Quality mindset',

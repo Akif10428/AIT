@@ -49,6 +49,24 @@ Never commit `.env` with real secrets. The reCAPTCHA **secret** key stays in For
 
 Successful submits fire `generate_lead` (GA4) and `Lead` (Meta Pixel).
 
+## Packages + Facebook ad Order Now
+
+The **Packages** section (`#packages`) shows the four website packages with **Order Now**.
+
+When a visitor clicks **Order Now**, a form asks for **email** and **phone**. Submit goes to Formspree (same form as Contact), emails you, and fires Meta Pixel `Lead` (plus `InitiateCheckout` on button click).
+
+### Facebook Ads landing URLs
+
+Use one of these as the ad destination / button link:
+
+- All packages: `https://akif10428.github.io/akif-portfolio/#packages`
+- Auto-open Basic Website order: `https://akif10428.github.io/akif-portfolio/?order=basic-website#packages`
+- Auto-open Basic Portfolio: `https://akif10428.github.io/akif-portfolio/?order=basic-portfolio#packages`
+- Auto-open Website + Android: `https://akif10428.github.io/akif-portfolio/?order=website-android#packages`
+- Auto-open Website + Android + iOS: `https://akif10428.github.io/akif-portfolio/?order=website-android-ios#packages`
+
+Make sure Formspree sends notifications to your inbox (`akifratul@gmail.com` or whatever is set on the Formspree form).
+
 ## Deploy
 
 Static site — any static host works.

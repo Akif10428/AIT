@@ -60,14 +60,29 @@ export function initAnalytics() {
   }
 }
 
-export function trackLead() {
+export function trackLead(label = 'contact_form') {
   if (gaId && window.gtag) {
     window.gtag('event', 'generate_lead', {
       event_category: 'engagement',
-      event_label: 'contact_form',
+      event_label: label,
     })
   }
   if (pixelId && window.fbq) {
     window.fbq('track', 'Lead')
+  }
+}
+
+/** Fired when visitor clicks Order Now (Facebook ads funnel). */
+export function trackInitiateCheckout(packageName: string) {
+  if (gaId && window.gtag) {
+    window.gtag('event', 'begin_checkout', {
+      event_category: 'engagement',
+      event_label: packageName,
+    })
+  }
+  if (pixelId && window.fbq) {
+    window.fbq('track', 'InitiateCheckout', {
+      content_name: packageName,
+    })
   }
 }

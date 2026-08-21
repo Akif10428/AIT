@@ -1,0 +1,153 @@
+.order-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: color-mix(in srgb, #0c0a08 72%, transparent);
+  backdrop-filter: blur(6px);
+}
+
+.order-modal__panel {
+  position: relative;
+  width: min(100%, 440px);
+  max-height: min(92svh, 720px);
+  overflow: auto;
+  padding: 1.75rem 1.5rem 1.5rem;
+  border-radius: 16px;
+  background: #f7f2ea;
+  color: var(--ink);
+  box-shadow: 0 24px 60px color-mix(in srgb, #000 35%, transparent);
+}
+
+.order-modal__close {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.75rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  color: var(--ink);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.order-modal__close:hover {
+  background: color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.order-modal__badge {
+  margin: 0 0 0.5rem;
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ember) 28%, #fff);
+  color: color-mix(in srgb, var(--ink) 85%, var(--ember));
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.order-modal__panel h2 {
+  margin: 0.35rem 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 4vw, 1.9rem);
+  font-weight: 500;
+  line-height: 1.2;
+  padding-right: 1.5rem;
+}
+
+.order-modal__price {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--teal-deep);
+}
+
+.order-modal__hint {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--ink) 72%, transparent);
+}
+
+.order-modal__form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.order-modal__form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.order-modal__form input {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.order-modal__form input:focus {
+  outline: 2px solid color-mix(in srgb, var(--teal) 55%, transparent);
+  outline-offset: 1px;
+}
+
+.order-modal__captcha {
+  margin-top: 0.15rem;
+  overflow-x: auto;
+}
+
+.order-modal__error {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #8a2e2e;
+}
+
+.order-modal__form .btn--primary {
+  margin-top: 0.35rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.order-modal__form .btn--primary:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.order-modal__success {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.order-modal__success p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.order-modal__success .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--ghost-dark {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--ink) 22%, transparent) !important;
+}
+
+.btn--ghost-dark:hover {
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+}

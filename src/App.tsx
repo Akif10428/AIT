@@ -4,6 +4,7 @@ import { CurrentFocus } from './components/CurrentFocus'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Packages } from './components/Packages'
 import { Services } from './components/Services'
 import { Work } from './components/Work'
 import { WhyMe } from './components/WhyMe'
@@ -22,6 +23,7 @@ function App() {
       <main>
         <Hero />
         <CurrentFocus />
+        <Packages />
         <Services />
         <WhyMe />
         <Work />
