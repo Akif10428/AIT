@@ -5,6 +5,7 @@ import './Header.css'
 const nav = [
   { href: '#focus', label: 'Focus' },
   { href: '#packages', label: 'Packages' },
+  { href: '#ecommerce', label: 'E-commerce' },
   { href: '#support', label: 'Support' },
   { href: '#services', label: 'Services' },
   { href: '#why', label: 'Why us' },

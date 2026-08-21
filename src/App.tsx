@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Contact } from './components/Contact'
 import { CurrentFocus } from './components/CurrentFocus'
+import { Ecommerce } from './components/Ecommerce'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
@@ -28,6 +29,7 @@ function App() {
         <Hero />
         <CurrentFocus />
         <Packages />
+        <Ecommerce />
         <SupportTerms />
         <Services />
         <WhyUs />

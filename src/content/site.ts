@@ -108,8 +108,6 @@ export const packages = [
   },
 ] as const
 
-export type PackageId = (typeof packages)[number]['id']
-
 export const packageFeatures = [
   'মডার্ন ও প্রফেশনাল ডিজাইন',
   'মোবাইল রেসপনসিভ (সকল ডিভাইসে সাপোর্ট)',
@@ -136,6 +134,112 @@ export const whyUs = [
       'No bloated agency package. A practical site that helps your Facebook audience become customers.',
   },
 ]
+
+/** Custom e-commerce package details (reference build: aatprohor.com). */
+export const ecommerce = {
+  eyebrow: 'Custom E-Commerce Website',
+  heading: 'Everything Your Online Shop Needs',
+  summary:
+    'A complete, ready-to-launch e-commerce platform built for Bangladeshi businesses — bilingual storefront, cash-on-delivery checkout, courier integration, ad-pixel tracking, and a full admin dashboard.',
+  stats: [
+    { value: '27', label: 'Basic features' },
+    { value: '33', label: 'Special features' },
+    { value: '20', label: 'Premium features' },
+    { value: '80', label: 'Total features' },
+  ],
+  tiers: [
+    {
+      id: 'ecom-basic',
+      name: 'Basic',
+      accent: 'green',
+      priceLabel: 'Custom quote',
+      blurb: 'Everything a store needs to open and start taking orders.',
+      features: [
+        'Homepage, product catalogue & category browsing',
+        'Product detail pages with multiple photos',
+        'Shopping cart & simple checkout (name, phone, address)',
+        'Customer registration, login & password reset',
+        'My Account with order history',
+        'Full admin dashboard with order & sales totals',
+        'Add/edit products, categories & subcategories',
+        'Order list with status tracking (Received → Delivered)',
+        'Customer list & internal stock management',
+        'About, FAQ & contact/social links',
+        'Fully mobile-friendly design',
+      ],
+    },
+    {
+      id: 'ecom-special',
+      name: 'Special',
+      accent: 'orange',
+      priceLabel: 'Custom quote',
+      blurb: 'What makes this shop work perfectly for Bangladesh.',
+      features: [
+        'Full English + Bangla language toggle',
+        'Cash on Delivery (COD) — no card needed',
+        'Bangladesh delivery zones & area-based charges',
+        'Guest order tracking by ID + phone',
+        'Wishlist & one-tap product sharing',
+        'Color / size options with photo-linked variants',
+        'Coupons, campaigns & homepage banners',
+        'Hide/show products without losing order history',
+        'WhatsApp order-status message templates',
+        'Customer segmentation (New/Repeat/Inactive)',
+        'Low-stock alerts & sales snapshot dashboard',
+        'Bulk actions, CSV order export & safe-delete logic',
+      ],
+    },
+    {
+      id: 'ecom-premium',
+      name: 'Premium',
+      accent: 'purple',
+      priceLabel: 'Custom quote',
+      blurb: 'Advanced integrations that scale your business.',
+      features: [
+        'Google & Facebook social login',
+        'Referral program — reward both sides',
+        'Steadfast Courier API — auto consignment & tracking',
+        'Meta Pixel + Conversions API for FB/IG ads',
+        'Google Analytics & AdSense integration',
+        'reCAPTCHA bot protection',
+        'Gmail SMTP transactional email',
+        'SEO-ready sitemap & product URLs',
+        'Custom domain (yourshop.com)',
+        'Sideloadable Android apps — customer & admin',
+        'Role-based staff access (Super Admin)',
+        'SSLCommerz online payment',
+      ],
+      comingSoon: ['SSLCommerz online payment'],
+    },
+  ],
+  demo: {
+    title: 'Powered by AIT',
+    subtitle: 'Web Development & Digital Marketing — built for Bangladeshi businesses',
+    siteLabel: 'Live example',
+    siteHref: 'https://aatprohor.com',
+    siteText: 'aatprohor.com',
+    adminLabel: 'Admin panel',
+    adminHref: 'https://aatprohor.com/admin/login',
+    adminText: 'aatprohor.com/admin/login',
+  },
+  note:
+    'Reference build shown above (Aatprohor). Your website will be customized with your own branding, products, and domain.',
+} as const
+
+export type PackageId = (typeof packages)[number]['id'] | (typeof ecommerce.tiers)[number]['id']
+
+export function findOrderable(id: string | null) {
+  if (!id) return null
+  const fromList = packages.find((pkg) => pkg.id === id)
+  if (fromList) return fromList
+  const fromEcom = ecommerce.tiers.find((tier) => tier.id === id)
+  if (!fromEcom) return null
+  return {
+    id: fromEcom.id,
+    name: `E-Commerce ${fromEcom.name}`,
+    priceLabel: fromEcom.priceLabel,
+  }
+}
 
 export const heroStats = [
   { value: '15+', label: 'Years in global IT' },

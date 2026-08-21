@@ -53,17 +53,23 @@ Successful submits fire `generate_lead` (GA4) and `Lead` (Meta Pixel).
 
 The **Packages** section (`#packages`) shows the four website packages with **Order Now**.
 
+The **E-commerce** section (`#ecommerce`) lists Basic / Special / Premium shop features from the Aatprohor reference build.
+
 When a visitor clicks **Order Now**, a form asks for **email** and **phone**. Submit goes to Formspree (same form as Contact), emails you, and fires Meta Pixel `Lead` (plus `InitiateCheckout` on button click).
 
 ### Facebook Ads landing URLs
 
 Use one of these as the ad destination / button link:
 
-- All packages: `https://akif10428.github.io/akif-portfolio/#packages`
+- All website packages: `https://akif10428.github.io/akif-portfolio/#packages`
 - Auto-open Basic Website order: `https://akif10428.github.io/akif-portfolio/?order=basic-website#packages`
 - Auto-open Basic Portfolio: `https://akif10428.github.io/akif-portfolio/?order=basic-portfolio#packages`
 - Auto-open Website + Android: `https://akif10428.github.io/akif-portfolio/?order=website-android#packages`
 - Auto-open Website + Android + iOS: `https://akif10428.github.io/akif-portfolio/?order=website-android-ios#packages`
+- E-commerce packages: `https://akif10428.github.io/akif-portfolio/#ecommerce`
+- Auto-open E-Commerce Basic: `https://akif10428.github.io/akif-portfolio/?order=ecom-basic#ecommerce`
+- Auto-open E-Commerce Special: `https://akif10428.github.io/akif-portfolio/?order=ecom-special#ecommerce`
+- Auto-open E-Commerce Premium: `https://akif10428.github.io/akif-portfolio/?order=ecom-premium#ecommerce`
 
 Make sure Formspree sends notifications to your inbox (`akifratul@gmail.com` or whatever is set on the Formspree form).
 

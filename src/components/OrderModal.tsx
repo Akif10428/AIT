@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 import ReCAPTCHA from 'react-google-recaptcha'
-import { packages, site, type PackageId } from '../content/site'
+import { findOrderable, site, type PackageId } from '../content/site'
 import { trackLead } from '../lib/analytics'
 import './OrderModal.css'
 
@@ -18,7 +18,7 @@ type OrderModalProps = {
 }
 
 export function OrderModal({ packageId, open, onClose }: OrderModalProps) {
-  const pkg = packages.find((p) => p.id === packageId) ?? null
+  const pkg = findOrderable(packageId)
   const [state, handleFormspreeSubmit] = useForm(FORMSPREE_ID)
   const captchaRef = useRef<ReCAPTCHA>(null)
   const [captchaError, setCaptchaError] = useState('')
