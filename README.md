@@ -71,7 +71,7 @@ Use one of these as the ad destination / button link:
 - Auto-open E-Commerce Special: `https://akif10428.github.io/akif-portfolio/?order=ecom-special#ecommerce`
 - Auto-open E-Commerce Premium: `https://akif10428.github.io/akif-portfolio/?order=ecom-premium#ecommerce`
 
-Make sure Formspree sends notifications to your inbox (`akifratul@gmail.com` or whatever is set on the Formspree form).
+Make sure Formspree sends notifications to your inbox (`trustonait@gmail.com` or whatever is set on the Formspree form).
 
 ## Deploy
 

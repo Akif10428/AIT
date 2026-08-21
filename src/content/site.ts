@@ -4,7 +4,7 @@ export const site = {
   name: 'AIT',
   role: 'We Build | You Grow',
   tagline: '15 years in the global IT industry — building websites and apps that turn Facebook traffic into customers.',
-  email: 'akifratul@gmail.com',
+  email: 'trustonait@gmail.com',
   /** Bangladesh mobile with country code for wa.me */
   whatsapp: '8801622670612',
   whatsappDisplay: '01622-670612',

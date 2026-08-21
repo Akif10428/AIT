@@ -36,7 +36,7 @@ jobs:
           # Public site config (safe in build output)
           VITE_META_PIXEL_ID: '3393551357410244'
           VITE_MESSENGER_HREF: 'https://m.me/akifratul'
-          VITE_CONTACT_EMAIL: 'akifratul@gmail.com'
+          VITE_CONTACT_EMAIL: 'trustonait@gmail.com'
           VITE_WHATSAPP_NUMBER: '8801622670612'
           VITE_RECAPTCHA_SITE_KEY: '6Ldo5WotAAAAANh1J9enRhPCplKSiHb3QSRbtNHo'
           # Optional secrets (Settings → Secrets and variables → Actions)
