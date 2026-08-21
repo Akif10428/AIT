@@ -256,13 +256,16 @@ export const supportTerms = [
   {
     title: '1 MONTH',
     description: 'Warranty Period',
+    caution: '*Conditions apply',
   },
   {
     title: '3 MONTHS',
     description: 'Enhancement Period',
+    caution: '*Conditions apply',
   },
   {
     title: 'LIFETIME',
     description: 'Support',
+    caution: '*Conditions apply',
   },
 ]

@@ -17,6 +17,7 @@ export function SupportTerms() {
           >
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+            <p className="support-terms__caution">{item.caution}</p>
           </li>
         ))}
       </ul>

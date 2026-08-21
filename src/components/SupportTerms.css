@@ -58,6 +58,14 @@
   line-height: 1.45;
 }
 
+.support-terms__caution {
+  margin-top: 0.85rem !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+  color: #ffcc66 !important;
+}
+
 @media (min-width: 800px) {
   .support-terms__grid {
     grid-template-columns: repeat(3, 1fr);
