@@ -77,8 +77,8 @@
   margin: 1rem 0 0;
   font-size: 1.05rem;
   line-height: 1.55;
-  color: color-mix(in srgb, var(--fog) 72%, transparent);
-  max-width: 36ch;
+  color: color-mix(in srgb, var(--fog) 88%, transparent);
+  max-width: 38ch;
 }
 
 .hero__actions {
@@ -86,6 +86,40 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 2rem;
+}
+
+.hero__stats {
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  max-width: 34rem;
+}
+
+.hero__stats li {
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  background: color-mix(in srgb, #000 28%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fog) 16%, transparent);
+  backdrop-filter: blur(6px);
+}
+
+.hero__stat-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  line-height: 1.1;
+  color: var(--ember-bright);
+}
+
+.hero__stat-label {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--fog) 88%, transparent);
 }
 
 @keyframes atmosphere-drift {

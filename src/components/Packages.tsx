@@ -50,18 +50,26 @@ export function Packages() {
 
   return (
     <section className="packages" id="packages" aria-labelledby="packages-heading">
-      <div className="section-head packages__head">
-        <p className="packages__eyebrow">Website price list</p>
+      <div className="section-head packages__head" data-reveal>
+        <p className="section-eyebrow">Website price list</p>
         <h2 id="packages-heading">Choose the best solution for your business</h2>
         <p>Professional websites & mobile apps to grow your business. Order now — we will contact you.</p>
       </div>
 
       <ul className="packages__grid">
-        {packages.map((pkg) => (
-          <li key={pkg.id} className={`packages__card packages__card--${pkg.accent}`}>
+        {packages.map((pkg, index) => (
+          <li
+            key={pkg.id}
+            className={`packages__card packages__card--${pkg.accent}`}
+            data-reveal
+            style={{ transitionDelay: `${index * 80}ms` }}
+          >
             <span className="packages__num">{pkg.number}</span>
             <h3>{pkg.name}</h3>
-            <p className="packages__price">{pkg.priceLabel}</p>
+            <p className="packages__price">
+              <span className="packages__price-amount">{pkg.priceAmount}</span>
+              <span className="packages__price-unit">Taka · start from</span>
+            </p>
             <p className="packages__blurb">{pkg.blurb}</p>
             <button
               className="btn btn--primary packages__cta"
@@ -74,7 +82,7 @@ export function Packages() {
         ))}
       </ul>
 
-      <ul className="packages__features">
+      <ul className="packages__features" data-reveal>
         {packageFeatures.map((feature) => (
           <li key={feature}>{feature}</li>
         ))}

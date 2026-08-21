@@ -8,15 +8,18 @@ import { Packages } from './components/Packages'
 import { Services } from './components/Services'
 import { SupportTerms } from './components/SupportTerms'
 import { Work } from './components/Work'
-import { WhyMe } from './components/WhyMe'
+import { WhyUs } from './components/WhyUs'
 import { MessengerFloat } from './components/MessengerFloat'
 import { initAnalytics } from './lib/analytics'
+import { useReveal } from './lib/useReveal'
 import './App.css'
 
 function App() {
   useEffect(() => {
     initAnalytics()
   }, [])
+
+  useReveal()
 
   return (
     <>
@@ -27,7 +30,7 @@ function App() {
         <Packages />
         <SupportTerms />
         <Services />
-        <WhyMe />
+        <WhyUs />
         <Work />
         <Contact />
       </main>

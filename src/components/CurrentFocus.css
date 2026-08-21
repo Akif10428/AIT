@@ -7,15 +7,15 @@
 
 .current-focus__inner {
   max-width: 40rem;
-  animation: rise-in 0.8s ease-out both;
 }
 
 .current-focus__label {
   margin: 0 0 1rem;
   font-size: 0.85rem;
+  font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--ink) 55%, var(--teal));
+  color: var(--teal-deep);
 }
 
 .current-focus__headline {
@@ -37,7 +37,7 @@
   margin: 1rem 0 1.75rem;
   font-size: 1.05rem;
   line-height: 1.65;
-  color: color-mix(in srgb, var(--ink) 78%, transparent);
+  color: color-mix(in srgb, var(--ink) 92%, transparent);
 }
 
 .current-focus .btn--primary {

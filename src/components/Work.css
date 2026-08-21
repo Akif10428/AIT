@@ -5,7 +5,7 @@
 }
 
 .work .section-head p {
-  color: color-mix(in srgb, var(--fog) 70%, transparent);
+  color: color-mix(in srgb, var(--fog) 88%, transparent);
 }
 
 .work__list {
@@ -14,15 +14,20 @@
   padding: 0;
   display: grid;
   gap: 1rem;
+  max-width: 30rem;
 }
 
 .work__list li {
-  padding: 1.35rem 0;
-  border-top: 1px solid color-mix(in srgb, var(--fog) 16%, transparent);
+  padding: 1.5rem 1.4rem;
+  border-radius: 16px;
+  background: color-mix(in srgb, #fff 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fog) 14%, transparent);
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
-.work__list li:last-child {
-  border-bottom: 1px solid color-mix(in srgb, var(--fog) 16%, transparent);
+.work__list li:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--ember) 45%, transparent);
 }
 
 .work__list h3 {
@@ -34,7 +39,7 @@
 
 .work__list p {
   margin: 0;
-  color: color-mix(in srgb, var(--fog) 70%, transparent);
+  color: color-mix(in srgb, var(--fog) 86%, transparent);
   line-height: 1.55;
 }
 
@@ -50,23 +55,3 @@
   text-decoration: underline;
 }
 
-@media (min-width: 800px) {
-  .work__list {
-    grid-template-columns: 1fr;
-    max-width: 28rem;
-  }
-
-  .work__list li {
-    border-top: 1px solid color-mix(in srgb, var(--fog) 16%, transparent);
-    border-left: none;
-    padding: 1.35rem 0;
-  }
-
-  .work__list li:last-child {
-    border-bottom: 1px solid color-mix(in srgb, var(--fog) 16%, transparent);
-  }
-
-  .work__list li:first-child {
-    padding-left: 0;
-  }
-}

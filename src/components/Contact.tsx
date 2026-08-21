@@ -45,10 +45,10 @@ export function Contact() {
   return (
     <section className="contact" id="contact" aria-labelledby="contact-heading">
       <div className="contact__grid">
-        <div className="contact__intro">
+        <div className="contact__intro" data-reveal>
           <h2 id="contact-heading">Let's talk about your website</h2>
           <p>
-            Tell me about your business and Facebook Page. I'll reply with next steps for a
+            Tell us about your business and Facebook Page. We'll reply with next steps for a
             practical site that helps customers find and contact you.
           </p>
           <ul className="contact__details">
@@ -76,7 +76,7 @@ export function Contact() {
 
         {state.succeeded ? (
           <div className="contact__success" role="status">
-            <p>Thanks — your message was sent! I'll get back to you soon.</p>
+            <p>Thanks — your message was sent! We'll get back to you soon.</p>
             <a className="btn btn--primary" href={whatsappHref} target="_blank" rel="noreferrer">
               Also message on WhatsApp
             </a>
@@ -107,7 +107,7 @@ export function Contact() {
                 name="message"
                 rows={4}
                 required
-                placeholder="Website for my Facebook business…"
+                placeholder="Website for our Facebook business…"
               />
             </label>
             <ValidationError field="message" errors={state.errors} className="contact__field-error" />

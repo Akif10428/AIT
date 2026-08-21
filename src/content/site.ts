@@ -2,8 +2,8 @@ import { assetUrl } from '../lib/assets'
 
 export const site = {
   name: 'AIT',
-  role: 'SQA Manager at BJIT',
-  tagline: '15+ years building quality into software — now helping businesses show up online.',
+  role: 'We Build | You Grow',
+  tagline: '15 years in the global IT industry — building websites and apps that turn Facebook traffic into customers.',
   email: 'akifratul@gmail.com',
   /** Bangladesh mobile with country code for wa.me */
   whatsapp: '8801622670612',
@@ -52,14 +52,19 @@ export const services = [
       'A clear, fast site that explains what you sell and how to reach you — built for phones first.',
   },
   {
+    title: 'Mobile apps',
+    description:
+      'Android and iOS apps that extend your website, so customers can reach you from their phone.',
+  },
+  {
     title: 'Contact & WhatsApp',
     description:
       'Easy ways for customers to message you — form, call, or WhatsApp — without friction.',
   },
   {
-    title: 'Basics that matter',
+    title: 'Meta Pixel & analytics',
     description:
-      'Mobile layout, sensible SEO foundations, and analytics so you know what Facebook traffic does.',
+      'Pixel setup, mobile layout, SEO foundations, and analytics so your Facebook ads reach real buyers.',
   },
 ]
 
@@ -114,11 +119,11 @@ export const packageFeatures = [
   'সাপোর্ট এবং মেইনটেন্যান্স সুবিধা',
 ]
 
-export const whyMe = [
+export const whyUs = [
   {
     title: 'Quality mindset',
     description:
-      'Fifteen years in software quality means I care about details, deadlines, and things that actually work.',
+      'Fifteen years in software quality means we care about details, deadlines, and things that actually work.',
   },
   {
     title: 'Global IT experience',
@@ -130,6 +135,12 @@ export const whyMe = [
     description:
       'No bloated agency package. A practical site that helps your Facebook audience become customers.',
   },
+]
+
+export const heroStats = [
+  { value: '15+', label: 'Years in global IT' },
+  { value: 'Web + App', label: 'Android & iOS support' },
+  { value: 'Lifetime', label: 'Support included' },
 ]
 
 export const workSamples = [

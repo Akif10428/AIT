@@ -23,7 +23,7 @@
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.65;
-  color: color-mix(in srgb, var(--ink) 78%, transparent);
+  color: color-mix(in srgb, var(--ink) 92%, transparent);
   max-width: 34rem;
 }
 
@@ -42,9 +42,10 @@
 
 .contact__details span {
   font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--ink) 55%, transparent);
+  color: var(--teal-deep);
 }
 
 .contact__details a,

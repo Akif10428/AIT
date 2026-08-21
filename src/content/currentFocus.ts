@@ -18,7 +18,7 @@ export const currentFocus: CurrentFocus = {
   audience:
     'People looking for a website to run their business alongside a Facebook Page',
   summary:
-    'I help business owners turn Facebook interest into a clean, mobile-ready website — with contact, WhatsApp, and a page that looks credible when customers click through.',
+    'We help business owners turn Facebook interest into a clean, mobile-ready website — with contact, WhatsApp, and a page that looks credible when customers click through.',
   ctaText: 'Order Now',
   ctaHref: '#packages',
   updatedAt: 'Aug 2026',

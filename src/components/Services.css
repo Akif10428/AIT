@@ -1,11 +1,13 @@
 .services {
   padding: clamp(3.5rem, 9vw, 6rem) clamp(1.25rem, 4vw, 3rem);
-  background: var(--ink);
+  background:
+    radial-gradient(100% 80% at 100% 0%, #241f1a 0%, transparent 55%),
+    var(--ink);
   color: var(--fog);
 }
 
-.services .section-head p {
-  color: color-mix(in srgb, var(--fog) 72%, transparent);
+.services .section-head p:last-child {
+  color: color-mix(in srgb, var(--fog) 88%, transparent);
 }
 
 .services__list {
@@ -13,25 +15,40 @@
   margin: 2.5rem 0 0;
   padding: 0;
   display: grid;
-  gap: 1.75rem 2.5rem;
+  gap: 1.15rem;
   grid-template-columns: 1fr;
+}
+
+.services__list li {
+  padding: 1.5rem 1.35rem;
+  border-radius: 16px;
+  background: color-mix(in srgb, #fff 5%, transparent);
+  border: 1px solid color-mix(in srgb, var(--fog) 12%, transparent);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.services__list li:hover {
+  transform: translateY(-4px);
+  background: color-mix(in srgb, #fff 9%, transparent);
+  border-color: color-mix(in srgb, var(--ember) 40%, transparent);
 }
 
 .services__list h3 {
   margin: 0 0 0.5rem;
   font-family: var(--font-display);
-  font-size: 1.45rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
 .services__list p {
   margin: 0;
   line-height: 1.6;
-  color: color-mix(in srgb, var(--fog) 75%, transparent);
+  color: color-mix(in srgb, var(--fog) 78%, transparent);
 }
 
 @media (min-width: 720px) {
   .services__list {
     grid-template-columns: 1fr 1fr;
+    gap: 1.35rem;
   }
 }

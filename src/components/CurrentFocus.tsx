@@ -4,7 +4,7 @@ import './CurrentFocus.css'
 export function CurrentFocus() {
   return (
     <section className="current-focus" id="focus" aria-labelledby="focus-heading">
-      <div className="current-focus__inner">
+      <div className="current-focus__inner" data-reveal>
         <p className="current-focus__label">
           {currentFocus.label}
           <span aria-hidden="true"> · </span>
@@ -14,7 +14,7 @@ export function CurrentFocus() {
           {currentFocus.headline}
         </h2>
         <p className="current-focus__audience">
-          <strong>Who I’m helping now:</strong> {currentFocus.audience}
+          <strong>Who we’re helping now:</strong> {currentFocus.audience}
         </p>
         <p className="current-focus__summary">{currentFocus.summary}</p>
         <a className="btn btn--primary" href={currentFocus.ctaHref}>

@@ -7,7 +7,7 @@ const nav = [
   { href: '#packages', label: 'Packages' },
   { href: '#support', label: 'Support' },
   { href: '#services', label: 'Services' },
-  { href: '#why', label: 'Why me' },
+  { href: '#why', label: 'Why us' },
   { href: '#work', label: 'Work' },
   { href: '#contact', label: 'Contact' },
 ]
