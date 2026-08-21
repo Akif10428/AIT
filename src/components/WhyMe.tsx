@@ -6,7 +6,7 @@ export function WhyMe() {
     <section className="why-me" id="why" aria-labelledby="why-heading">
       <div className="section-head">
         <h2 id="why-heading">Why work with me</h2>
-        <p>Quality leadership experience applied to websites that need to convert.</p>
+        <p>15 years of global IT experience applied to websites that need to convert.</p>
       </div>
       <ul className="why-me__list">
         {whyMe.map((item) => (

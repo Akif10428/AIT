@@ -121,9 +121,9 @@ export const whyMe = [
       'Fifteen years in software quality means I care about details, deadlines, and things that actually work.',
   },
   {
-    title: 'Process you can trust',
+    title: 'Global IT experience',
     description:
-      'As an SQA Manager at BJIT, I run delivery with clarity — expectations, checks, and follow-through.',
+      '15 years of experience in the global IT industry — delivering reliable digital solutions with international quality standards.',
   },
   {
     title: 'Built for real businesses',
@@ -134,15 +134,23 @@ export const whyMe = [
 
 export const workSamples = [
   {
-    title: 'Sample business site',
-    description: 'Placeholder — replace with a live client or demo URL.',
+    title: 'AAT Prohor',
+    description: 'Live client website — visit aatprohor.com',
+    href: 'https://aatprohor.com/',
+  },
+]
+
+export const supportTerms = [
+  {
+    title: '1 MONTH',
+    description: 'Warranty Period',
   },
   {
-    title: 'Facebook-ready landing',
-    description: 'Placeholder — add a project that converted Page traffic.',
+    title: '3 MONTHS',
+    description: 'Enhancement Period',
   },
   {
-    title: 'Service showcase',
-    description: 'Placeholder — show a niche you have delivered for.',
+    title: 'LIFETIME',
+    description: 'Support',
   },
 ]

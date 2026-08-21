@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Packages } from './components/Packages'
 import { Services } from './components/Services'
+import { SupportTerms } from './components/SupportTerms'
 import { Work } from './components/Work'
 import { WhyMe } from './components/WhyMe'
 import { MessengerFloat } from './components/MessengerFloat'
@@ -24,6 +25,7 @@ function App() {
         <Hero />
         <CurrentFocus />
         <Packages />
+        <SupportTerms />
         <Services />
         <WhyMe />
         <Work />

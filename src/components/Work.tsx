@@ -6,13 +6,23 @@ export function Work() {
     <section className="work" id="work" aria-labelledby="work-heading">
       <div className="section-head">
         <h2 id="work-heading">Work / samples</h2>
-        <p>Placeholders for now — swap in real client or demo sites when ready.</p>
+        <p>Real projects delivered for clients.</p>
       </div>
       <ul className="work__list">
         {workSamples.map((item) => (
           <li key={item.title}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+            {item.href ? (
+              <a
+                className="work__link"
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit site →
+              </a>
+            ) : null}
           </li>
         ))}
       </ul>
