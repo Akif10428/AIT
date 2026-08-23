@@ -61,15 +61,15 @@ When a visitor clicks **Order Now**, a form asks for **email** and **phone**. Su
 
 Use one of these as the ad destination / button link:
 
-- All website packages: `https://akif10428.github.io/akif-portfolio/#packages`
-- Auto-open Basic Website order: `https://akif10428.github.io/akif-portfolio/?order=basic-website#packages`
-- Auto-open Basic Portfolio: `https://akif10428.github.io/akif-portfolio/?order=basic-portfolio#packages`
-- Auto-open Website + Android: `https://akif10428.github.io/akif-portfolio/?order=website-android#packages`
-- Auto-open Website + Android + iOS: `https://akif10428.github.io/akif-portfolio/?order=website-android-ios#packages`
-- E-commerce packages: `https://akif10428.github.io/akif-portfolio/#ecommerce`
-- Auto-open E-Commerce Basic: `https://akif10428.github.io/akif-portfolio/?order=ecom-basic#ecommerce`
-- Auto-open E-Commerce Special: `https://akif10428.github.io/akif-portfolio/?order=ecom-special#ecommerce`
-- Auto-open E-Commerce Premium: `https://akif10428.github.io/akif-portfolio/?order=ecom-premium#ecommerce`
+- All website packages: `https://akif10428.github.io/AIT/#packages`
+- Auto-open Basic Website order: `https://akif10428.github.io/AIT/?order=basic-website#packages`
+- Auto-open Basic Portfolio: `https://akif10428.github.io/AIT/?order=basic-portfolio#packages`
+- Auto-open Website + Android: `https://akif10428.github.io/AIT/?order=website-android#packages`
+- Auto-open Website + Android + iOS: `https://akif10428.github.io/AIT/?order=website-android-ios#packages`
+- E-commerce packages: `https://akif10428.github.io/AIT/#ecommerce`
+- Auto-open E-Commerce Basic: `https://akif10428.github.io/AIT/?order=ecom-basic#ecommerce`
+- Auto-open E-Commerce Special: `https://akif10428.github.io/AIT/?order=ecom-special#ecommerce`
+- Auto-open E-Commerce Premium: `https://akif10428.github.io/AIT/?order=ecom-premium#ecommerce`
 
 Make sure Formspree sends notifications to your inbox (`trustonait@gmail.com` or whatever is set on the Formspree form).
 
@@ -79,7 +79,7 @@ Static site — any static host works.
 
 ### Vercel / Netlify
 
-1. Connect this folder as the app root (or monorepo subdirectory `akif-portfolio`).
+1. Connect this folder as the app root (or monorepo subdirectory `akif-portfolio` / `AIT`).
 2. Build command: `npm run build`
 3. Publish directory: `dist`
 4. Add the `VITE_*` env vars in the host UI, then redeploy.

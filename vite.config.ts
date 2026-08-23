@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// GitHub Pages project site: https://Akif10428.github.io/akif-portfolio/
+// GitHub Pages project site: https://akif10428.github.io/AIT/
 export default defineConfig({
   plugins: [react()],
-  base: '/akif-portfolio/',
+  base: '/AIT/',
 })
