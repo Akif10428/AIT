@@ -82,6 +82,8 @@ export const packages = [
     badge: 'Budget friendly',
     blurb:
       'A one-page website to get your Facebook business online — fast, simple, and within 10,000 Taka.',
+    sampleHref: assetUrl('samples/startup/index.html'),
+    sampleLabel: 'See sample',
     features: [
       'One-page landing site: about, what you sell, and how to contact you',
       'Mobile-ready so Facebook clicks look professional on any phone',
@@ -271,6 +273,12 @@ export const workSamples = [
     title: 'AAT Prohor',
     description: 'Live client website — visit aatprohor.com',
     href: 'https://aatprohor.com/',
+  },
+  {
+    title: 'Ghoroa Kitchen',
+    description: 'Dummy sample — Startup Package one-page site for a Facebook food business.',
+    href: assetUrl('samples/startup/index.html'),
+    badge: 'Sample',
   },
 ]
 

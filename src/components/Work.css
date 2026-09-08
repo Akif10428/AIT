@@ -14,7 +14,7 @@
   padding: 0;
   display: grid;
   gap: 1rem;
-  max-width: 30rem;
+  max-width: 44rem;
 }
 
 .work__list li {
@@ -25,9 +25,28 @@
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
+.work__badge {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ember);
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .work__list li:hover {
   transform: translateY(-4px);
   border-color: color-mix(in srgb, var(--ember) 45%, transparent);
+}
+
+@media (min-width: 720px) {
+  .work__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .work__list h3 {

@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghoroa Kitchen — Homemade food, Dhaka</title>
+    <meta
+      name="description"
+      content="Dummy sample for AIT Startup Package. Ghoroa Kitchen — homemade Bangladeshi meals ordered on Facebook and WhatsApp."
+    />
+    <link rel="icon" type="image/svg+xml" href="/AIT/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #2a1810;
+        --paper: #fbf6ee;
+        --leaf: #3d6b45;
+        --leaf-deep: #2b4d32;
+        --chili: #c45c26;
+        --line: rgba(42, 24, 16, 0.12);
+        --font-display: 'Fraunces', Georgia, serif;
+        --font-body: 'Manrope', sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: var(--paper);
+        line-height: 1.55;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .demo-bar {
+        background: #171411;
+        color: #f4efe6;
+        font-size: 0.82rem;
+        font-weight: 600;
+        text-align: center;
+        padding: 0.55rem 1rem;
+      }
+
+      .demo-bar a {
+        color: #e4a85c;
+        text-decoration: none;
+      }
+
+      .demo-bar a:hover {
+        text-decoration: underline;
+      }
+
+      .wrap {
+        width: min(1080px, calc(100% - 2rem));
+        margin-inline: auto;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(12px);
+        background: color-mix(in srgb, var(--paper) 88%, transparent);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.85rem 0;
+      }
+
+      .brand {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: none;
+        gap: 1.2rem;
+        font-size: 0.92rem;
+        font-weight: 600;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.78rem 1.2rem;
+        border-radius: 999px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 0;
+      }
+
+      .btn-primary {
+        background: var(--leaf);
+        color: #fff;
+      }
+
+      .btn-primary:hover {
+        background: var(--leaf-deep);
+      }
+
+      .btn-ghost {
+        border: 1px solid var(--line);
+        background: transparent;
+      }
+
+      .hero {
+        display: grid;
+        gap: 1.5rem;
+        padding: 2rem 0 2.5rem;
+      }
+
+      .hero h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2.3rem, 8vw, 4.2rem);
+        line-height: 1.05;
+        margin: 0.35rem 0 0.8rem;
+      }
+
+      .kicker {
+        margin: 0;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 0.74rem;
+        font-weight: 700;
+        color: var(--chili);
+      }
+
+      .hero p {
+        margin: 0 0 1.2rem;
+        font-size: 1.05rem;
+        max-width: 36rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+      }
+
+      .hero img {
+        width: 100%;
+        height: min(52vw, 420px);
+        object-fit: cover;
+        border-radius: 22px;
+      }
+
+      section {
+        padding: 2.4rem 0;
+      }
+
+      h2 {
+        font-family: var(--font-display);
+        font-size: clamp(1.7rem, 4vw, 2.3rem);
+        margin: 0 0 0.7rem;
+      }
+
+      .menu-grid,
+      .photo-grid,
+      .info-grid {
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1.15rem 1.2rem;
+      }
+
+      .card h3 {
+        margin: 0 0 0.35rem;
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+      }
+
+      .card p,
+      .card span {
+        margin: 0;
+        color: color-mix(in srgb, var(--ink) 78%, transparent);
+      }
+
+      .price {
+        display: inline-block;
+        margin-top: 0.65rem;
+        font-weight: 800;
+        color: var(--leaf-deep);
+      }
+
+      .photo-grid img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 14px;
+      }
+
+      .contact-box {
+        background: var(--ink);
+        color: var(--paper);
+        border-radius: 20px;
+        padding: 1.6rem;
+      }
+
+      .contact-box h2,
+      .contact-box p,
+      .contact-box a {
+        color: var(--paper);
+      }
+
+      .contact-box a {
+        font-weight: 700;
+      }
+
+      .wa-float {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        z-index: 20;
+        background: #25d366;
+        color: #fff;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 0.72rem;
+      }
+
+      footer {
+        padding: 1.5rem 0 5rem;
+        font-size: 0.88rem;
+        color: color-mix(in srgb, var(--ink) 70%, transparent);
+      }
+
+      @media (min-width: 720px) {
+        .nav-links {
+          display: flex;
+        }
+
+        .hero {
+          grid-template-columns: 1.05fr 0.95fr;
+          align-items: center;
+        }
+
+        .hero img {
+          height: 420px;
+        }
+
+        .menu-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .photo-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .info-grid {
+          grid-template-columns: 1.1fr 0.9fr;
+          align-items: start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-bar">
+      Dummy sample · AIT Startup Package (10,000 Taka) ·
+      <a href="/AIT/#packages">Back to AIT packages</a>
+    </div>
+
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#top">Ghoroa Kitchen</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#photos">Photos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/8801622670612?text=Hi%20AIT%2C%20I%20saw%20the%20Startup%20Package%20sample%20(Ghoroa%20Kitchen)"
+          target="_blank"
+          rel="noopener noreferrer"
+          >WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap hero" id="top">
+        <div>
+          <p class="kicker">Homemade · Dhaka</p>
+          <h1>Meals from our kitchen, ordered on Facebook.</h1>
+          <p>
+            Family recipes, packed fresh, delivered the same day. Tap WhatsApp to order — this is a
+            dummy sample of an AIT Startup Package website.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/8801622670612?text=Hi%20AIT%2C%20I%20saw%20the%20Startup%20Package%20sample%20(Ghoroa%20Kitchen)"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Order on WhatsApp</a
+            >
+            <a class="btn btn-ghost" href="https://www.facebook.com/akifratul" target="_blank" rel="noopener noreferrer"
+              >Facebook Page</a
+            >
+          </div>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=70"
+          alt="Bowl of biryani — sample photo for Ghoroa Kitchen"
+          width="1200"
+          height="800"
+        />
+      </section>
+
+      <section class="wrap" id="about">
+        <p class="kicker">About</p>
+        <h2>Cooked at home. Sent to yours.</h2>
+        <p>
+          Ghoroa Kitchen is a sample Facebook food business: a home kitchen in Vatara, Dhaka, taking
+          lunch and dinner orders from nearby areas. Your real site would use your name, photos, and
+          menu.
+        </p>
+      </section>
+
+      <section class="wrap" id="menu">
+        <p class="kicker">What we sell</p>
+        <h2>Today’s menu</h2>
+        <div class="menu-grid">
+          <article class="card">
+            <h3>Kacchi Biryani</h3>
+            <p>Slow-cooked mutton, basmati, and homemade spices. Serves 1.</p>
+            <span class="price">৳ 420</span>
+          </article>
+          <article class="card">
+            <h3>Beef Tehari</h3>
+            <p>Friday special — aromatic rice with tender beef.</p>
+            <span class="price">৳ 280</span>
+          </article>
+          <article class="card">
+            <h3>Chicken Roast + Polao</h3>
+            <p>Party favourite. Packed for office lunch or family dinner.</p>
+            <span class="price">৳ 350</span>
+          </article>
+          <article class="card">
+            <h3>Family Platter</h3>
+            <p>Biryani, roast, salad, and firni for 4 people.</p>
+            <span class="price">৳ 1,450</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap" id="photos">
+        <p class="kicker">Photos</p>
+        <h2>From the kitchen</h2>
+        <div class="photo-grid">
+          <img
+            src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=70"
+            alt="Sample thali photo"
+            width="800"
+            height="600"
+            loading="lazy"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=70"
+            alt="Sample curry photo"
+            width="800"
+            height="600"
+            loading="lazy"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1574484284002-952d82843551?auto=format&fit=crop&w=800&q=70"
+            alt="Sample dessert photo"
+            width="800"
+            height="600"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="wrap info-grid" id="contact">
+        <div class="contact-box">
+          <p class="kicker" style="color: #e4a85c">Contact</p>
+          <h2>Order for today</h2>
+          <p>Call or WhatsApp with your item, quantity, and address. Dummy sample contacts go to AIT.</p>
+          <p style="margin-top: 1rem">
+            Phone:
+            <a href="tel:+8801622670612">01622-670612</a><br />
+            WhatsApp:
+            <a
+              href="https://wa.me/8801622670612?text=Hi%20AIT%2C%20I%20saw%20the%20Startup%20Package%20sample%20(Ghoroa%20Kitchen)"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Message us</a
+            ><br />
+            Facebook:
+            <a href="https://www.facebook.com/akifratul" target="_blank" rel="noopener noreferrer">Page link</a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Delivery areas</h3>
+          <p>Vatara, Badda, Gulshan, Banani — sample coverage only.</p>
+          <h3 style="margin-top: 1.1rem">Hours</h3>
+          <p>Lunch orders by 11:00 AM · Dinner orders by 5:00 PM</p>
+          <h3 style="margin-top: 1.1rem">Address</h3>
+          <p>1179 Sohag Tower, Nurercala Bazar Road, Vatara, Dhaka 1212 (sample)</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap">
+      © 2026 Ghoroa Kitchen · Dummy sample built by
+      <a href="/AIT/">AIT</a>
+    </footer>
+
+    <a
+      class="wa-float"
+      href="https://wa.me/8801622670612?text=Hi%20AIT%2C%20I%20saw%20the%20Startup%20Package%20sample%20(Ghoroa%20Kitchen)"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+      >WA</a
+    >
+  </body>
+</html>

@@ -5,4 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/AIT/',
+  // Public HTML samples (e.g. /samples/startup/) must win over SPA fallback.
+  appType: 'mpa',
 })

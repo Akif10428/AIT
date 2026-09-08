@@ -166,11 +166,22 @@
   color: color-mix(in srgb, var(--fog) 86%, transparent);
 }
 
+.packages__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.35rem;
+}
+
 .packages__cta {
   justify-self: start;
-  margin-top: 0.35rem;
   border: none;
   cursor: pointer;
+}
+
+.packages__sample {
+  padding: 0.72rem 1.1rem;
 }
 
 .packages__features {

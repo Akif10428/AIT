@@ -79,13 +79,25 @@ export function Packages() {
                   <span className="packages__price-unit">{priceUnit}</span>
                 </p>
                 <p className="packages__blurb">{pkg.blurb}</p>
-                <button
-                  className="btn btn--primary packages__cta"
-                  type="button"
-                  onClick={() => openOrder(pkg.id)}
-                >
-                  Order Now
-                </button>
+                <div className="packages__actions">
+                  <button
+                    className="btn btn--primary packages__cta"
+                    type="button"
+                    onClick={() => openOrder(pkg.id)}
+                  >
+                    Order Now
+                  </button>
+                  {'sampleHref' in pkg && pkg.sampleHref ? (
+                    <a
+                      className="btn btn--ghost packages__sample"
+                      href={pkg.sampleHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {'sampleLabel' in pkg ? pkg.sampleLabel : 'See sample'}
+                    </a>
+                  ) : null}
+                </div>
               </div>
               {features ? (
                 <ul className="packages__card-features">
