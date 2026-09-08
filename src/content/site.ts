@@ -71,8 +71,30 @@ export const services = [
 /** Packages for Facebook ads — Order Now captures lead (email + phone). */
 export const packages = [
   {
-    id: 'basic-website',
+    id: 'startup',
     number: '01',
+    name: 'Startup Package',
+    priceLabel: '10,000 Taka',
+    priceAmount: '10,000',
+    priceUnit: 'Taka · fixed price',
+    accent: 'gold',
+    featured: true,
+    badge: 'Budget friendly',
+    blurb:
+      'A one-page website to get your Facebook business online — fast, simple, and within 10,000 Taka.',
+    features: [
+      'One-page landing site: about, what you sell, and how to contact you',
+      'Mobile-ready so Facebook clicks look professional on any phone',
+      'WhatsApp button for instant customer messages',
+      'Your photos, phone number, and Facebook Page linked',
+      'Free hosting included (custom domain can be added later)',
+      'Meta Pixel ready if you run Facebook ads',
+      'Ready in 5–7 days · 1 revision included',
+    ],
+  },
+  {
+    id: 'basic-website',
+    number: '02',
     name: 'Basic Website',
     priceLabel: 'Start from 35,000 Taka',
     priceAmount: '35,000',
@@ -81,7 +103,7 @@ export const packages = [
   },
   {
     id: 'basic-portfolio',
-    number: '02',
+    number: '03',
     name: 'Basic Portfolio',
     priceLabel: 'Start from 25,000 Taka',
     priceAmount: '25,000',
@@ -90,7 +112,7 @@ export const packages = [
   },
   {
     id: 'website-android',
-    number: '03',
+    number: '04',
     name: 'Website + Android App',
     priceLabel: 'Start from 50,000 Taka',
     priceAmount: '50,000',
@@ -99,7 +121,7 @@ export const packages = [
   },
   {
     id: 'website-android-ios',
-    number: '04',
+    number: '05',
     name: 'Website + Android + iOS',
     priceLabel: 'Start from 75,000 Taka',
     priceAmount: '75,000',
