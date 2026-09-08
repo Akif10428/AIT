@@ -181,7 +181,15 @@
 }
 
 .packages__sample {
-  padding: 0.72rem 1.1rem;
+  padding: 0.72rem 1.2rem;
+  color: var(--ember-bright);
+  border: 2px solid var(--ember);
+  background: transparent;
+}
+
+.packages__sample:hover {
+  background: var(--ember);
+  color: var(--ink);
 }
 
 .packages__features {

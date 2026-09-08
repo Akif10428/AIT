@@ -89,12 +89,12 @@ export function Packages() {
                   </button>
                   {'sampleHref' in pkg && pkg.sampleHref ? (
                     <a
-                      className="btn btn--ghost packages__sample"
+                      className="btn packages__sample"
                       href={pkg.sampleHref}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {'sampleLabel' in pkg ? pkg.sampleLabel : 'See sample'}
+                      {'sampleLabel' in pkg ? pkg.sampleLabel : 'Sample'}
                     </a>
                   ) : null}
                 </div>

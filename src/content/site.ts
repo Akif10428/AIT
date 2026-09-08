@@ -83,7 +83,7 @@ export const packages = [
     blurb:
       'A one-page website to get your Facebook business online — fast, simple, and within 10,000 Taka.',
     sampleHref: assetUrl('samples/startup/index.html'),
-    sampleLabel: 'See sample',
+    sampleLabel: 'Sample',
     features: [
       'One-page landing site: about, what you sell, and how to contact you',
       'Mobile-ready so Facebook clicks look professional on any phone',
