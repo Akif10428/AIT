@@ -272,7 +272,7 @@ export const workSamples = [
   {
     title: 'Dhaka Mobile',
     description: 'Mobile shop demo — Bangla phone catalog with budget filters, stock status, and a sample WhatsApp inquiry flow.',
-    href: 'https://dhaka-mobile-demo-bjit.akifratul.chatgpt.site/',
+    href: assetUrl('samples/dhaka-mobile/index.html'),
     badge: 'Sample',
   },
   {
