@@ -270,6 +270,12 @@ export const heroStats = [
 
 export const workSamples = [
   {
+    title: 'Dhaka Mobile',
+    description: 'Mobile shop demo — Bangla phone catalog with budget filters, stock status, and a sample WhatsApp inquiry flow.',
+    href: 'https://dhaka-mobile-demo-bjit.akifratul.chatgpt.site/',
+    badge: 'Sample',
+  },
+  {
     title: 'AAT Prohor',
     description: 'Live client website — visit aatprohor.com',
     href: 'https://aatprohor.com/',
