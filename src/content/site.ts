@@ -271,7 +271,7 @@ export const heroStats = [
 export const workSamples = [
   {
     title: 'PhoneGhor',
-    description: 'Mobile shop demo — animated smartphone showcase, brand filters, classic phone gallery, and an interactive retro corner.',
+    description: 'Mobile shop demo — animated smartphone showcase with price sorting and filters for brand, model, RAM, storage, and phone type.',
     href: assetUrl('samples/dhaka-mobile/index.html'),
     badge: 'Sample',
   },
