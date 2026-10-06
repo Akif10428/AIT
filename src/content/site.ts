@@ -270,8 +270,8 @@ export const heroStats = [
 
 export const workSamples = [
   {
-    title: 'Dhaka Mobile',
-    description: 'Mobile shop demo — Bangla phone catalog with budget filters, stock status, and a sample WhatsApp inquiry flow.',
+    title: 'PhoneGhor',
+    description: 'Mobile shop demo — animated smartphone showcase, brand filters, classic phone gallery, and an interactive retro corner.',
     href: assetUrl('samples/dhaka-mobile/index.html'),
     badge: 'Sample',
   },
